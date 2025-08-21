@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { usePortfolio } from '../context/PortfolioContext';
-import { Search, MapPin, Star, Mail, Filter } from 'lucide-react';
+import { Search, MapPin, Star, Mail } from 'lucide-react';
 
 const ProfessionalsList = () => {
   const navigate = useNavigate();
-  const { state, setFilters, filterProfessionals } = usePortfolio();
+  const { state, setFilters } = usePortfolio();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedRole, setSelectedRole] = useState('');
   const [selectedLocation, setSelectedLocation] = useState('');

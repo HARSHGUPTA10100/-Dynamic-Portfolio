@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { usePortfolio } from '../context/PortfolioContext';
 import { PortfolioData } from '../types/index';
-import { Plus, X, Save, Upload, Edit, Trash2 } from 'lucide-react';
+import { Plus, X, Save, Upload, Trash2 } from 'lucide-react';
 
 const PortfolioForm = () => {
   const navigate = useNavigate();

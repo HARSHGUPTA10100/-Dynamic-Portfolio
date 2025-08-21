@@ -77,15 +77,6 @@ const PortfolioView = () => {
     );
   }
 
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <Star
-        key={i}
-        size={16}
-        className={i < Math.floor(rating) ? 'fill-yellow-400 text-yellow-400' : 'text-gray-300'}
-      />
-    ));
-  };
 
   const renderTemplate1 = () => (
     <div className="max-w-6xl mx-auto">
