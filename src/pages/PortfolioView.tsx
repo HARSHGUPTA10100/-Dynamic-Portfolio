@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { usePortfolio } from '../context/PortfolioContext';
 import { PortfolioData } from '../types/index';
-import { Mail, Phone, MapPin, Star, ArrowLeft, Edit, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowLeft, Edit, ExternalLink } from 'lucide-react';
 
 const PortfolioView = () => {
   const { id } = useParams<{ id: string }>();
